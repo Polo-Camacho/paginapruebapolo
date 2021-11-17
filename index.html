@@ -1,0 +1,205 @@
+<html>
+<head>
+    <title> Document </title>
+    <!--Acá la vamos a agregar el borde a nuestra tabla-->
+    <style> 
+        
+        tble, th, td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!--Acá la vamos a agregar epacio a nuestra tabla-->
+    <table style="width: 500px;">
+        <thead> 
+            <tr>
+                <!--Son como titulos de la tabla-->
+                <th>Producto</th>
+                <th>Precio</th>
+            
+            </tr>
+
+        </thead>
+        <tbody>
+                   
+
+         <tr>
+
+            <td>Matebook</td>
+            <td>1´250.9000</td>
+        
+        </tr>
+
+        <tr>
+
+            <td>iPad</td>
+            <td>2´400.9000</td>
+        
+        </tr>
+
+        <tr>
+
+            <td>Polo Alejandro Camacho Fajardo</td>
+            <td>100´250.900</td>
+        
+        </tr>
+
+        <tr>
+
+            <td>Polo Alejandro Camacho Fajardo</td>
+            <td>100´250.900</td>
+        
+        </tr>
+
+        </tbody>
+
+        <tfoot>
+            <td> </td>
+            <td> Total: 205´500.900</td>
+
+        </tfoot>
+
+
+    </table>
+
+    <!--ul Lista no ordenada-->
+    <ul>
+        <li>Elemnto 1</li>
+        <li>Elemnto 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemnto 4</li>
+
+    </ul>
+
+     <!--ol Lista ordenada-->
+     <!--Si queremos agregarle el valor por el cual queremos que inicie 
+     utilizamos value="aca dentro el valor"-->
+    <ol>
+        <li>Elemnto 1</li>
+        <li>Elemnto 2</li>
+        <li>Elemnto 3</li>
+        <li>Elemnto 4</li>
+        <li>Elemento 5</li>
+
+        <!--Esto lo usamos para agregar sud elmentos-->
+        <!--Esto lo usamos para darle el estilo de como queremos que salga secuencia-->
+       <ul style="list-style-type: lower-alpha ;">
+        <li>Sud Elemnto 1</li>
+        <li>Sud Elemnto 2</li>
+        <li>Sud Elemnto 3</li>
+        <li>Sud Elemnto 4</li>
+       </ul>
+    </ol>
+
+
+    <!--El form funcina para recopilar información de el usuario e 
+    interactuar con el usuario-->
+
+    <!--Acá en el label le indicamos el datos que necesitamos
+    o lo que le vamos a pedir al usuario-->
+
+    <!-- For esto nos sirve para que al pulsar encima de el texto
+    no se seleccione si no que nos lleve directamente a la parte donde
+    debemos dar el datos-->
+
+    <!--El input nos sirve para pedrile el dato al usuario-->
+
+    <!--placeholder nos sirve para decirle al usuario lo que le etsmaos pidiendo-->
+
+    <!--type nos sirve para asignar distintos valores para que nuestra etiqueta se vea diferente
+    Tenemos las siguientes:
+    submit = Boton
+    texto = texto
+    email = correo
+    Password = clave
+    radio = boton para pinchar
+    checkbox = casilla para chulear
+    file = para seleccionar un archivo-->
+
+    <!--Con textarea podemos agregar un area de texto-->
+
+    <!--rows nos sirve para cantidad de filas que queremos que
+    tenga nuestra area de texto-->
+
+    <!--cols nos sirve para la cantidad de columnas que queremos que tenga
+    nuestra area de texto-->
+
+    <!--action  nos sirve para guardar los datos que damos dentro de los input-->
+
+    <!--method acá le indicamos el metodo por el cual queremos para para poder los datos
+    a nuestro servidor tenemos dos GET enviará los valores atraves de la URL y-->
+
+    <!--Para agregar un valor por defecto utilizamos Value="Acá ponemos el valor por defecto"-->
+
+    <form action= "/formulario" method="POST"> 
+    <label for="nombre"> Nombre </label>
+    <input type="texto" id="nombre" name="nombre" placeholder="Ingrese su nombre"/>
+    <br>
+    <br>
+    <label for="nombre"> Apellido </label>
+    <input type="texto" id="Apellido" name="Apellido" placeholder="Ingrese su apellido"/>
+    <br>
+    <br>
+    <label for="comentario"> Comentario </label>
+    <br>
+    <textarea cols= "50" rows= "10" id= "comentario" name="comentario" placeholder="ingrese un comentario"></textarea>  
+    <br>
+    <input type= "submit"/>
+
+    <!--Botones-->
+    
+    <button type="boton" >Tipo Botón</button>
+    <button type="reset" >Tipo reset</button>
+    <button type="submit" >Tipo submit</button>
+
+     </form>
+
+    <!--Los <h> son titulos y van desde el <h1> hasta el <h6>-->
+    <h1>Mi primer heading</h1>
+    <h2>Mi primer heading</h2>
+    <h3> Mi primer heading </h3>
+    <h4> Mi primer heading</h4>
+    <h5> Mi primer heading</h5>
+    <h6> Mi primer heading </h6>
+
+    <!--Las <p> Son para crear parrafos-->   
+    <p> Polo Camacho.</p>
+    <p> Polo Camacho Fajardo.</p>
+    
+    <!--Los <hr> son para separa pos sesiones el contenido de nuestra página-->
+    <hr>
+    
+    <h1>Me gustan las motos </h1>
+    <!--La etiqeda de spam es para resaltar o referenciar algo, con style le damos el color 
+    en el que queremos que aparesca-->
+   
+    <p> Polo Camacho Fajardo, <span style="color: blue">le gustan las motos</span>
+    y tambien me gusta <br>
+    salir de fiesta.
+    </p>
+
+    <!--Acá agregaremos un link para que al pulsar este texto no lleve a una página. -->
+    <a href="https://www.google.com"> Ir a google </a>
+
+    <!--El br es para dar un salto de linea-->
+    <br>
+    
+    <!--Acá le daremos la función de que al oprimir el link nos lo habra pero en una nueva pestaña. -->
+    <a target="_blank"href="https://www.google.com"> Ir a google </a>
+    <br>
+
+    <!--Acá podemos agregar una imagen y con el width podemos elegir el tamaño de toda la imagen.-->
+    <img src= "img/deadpoll.jpg" width="400"/>
+
+    <!--Acá podemos agregar una imagen y con el height podemos elegir el tamaño de toda la imagen.-->
+    <img src= "img/deadpoll.jpg" height="400"/>
+
+    <!--Acá podemos agregar una imagen y con el height y el width podemos elegir a 
+    nuestro gusto el alto y el ancho de nuestra imagen.-->
+    <img src= "img/deadpoll.jpg" height="300"  width="200"/>
+
+
+</body>
+</html> 
